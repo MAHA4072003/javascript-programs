@@ -1,0 +1,13 @@
+<button onclick="addtext()">Add</button>
+<div id="result"></div>
+
+<script>
+    var div=document.getElementById("result")
+    function addtext()
+    {
+        var listitem=document.createElement("h1")
+        listitem.textContent="Hello World"
+        div.append(listitem)
+    }
+
+</script>
