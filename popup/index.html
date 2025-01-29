@@ -1,0 +1,62 @@
+<style>
+    .overley{
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        opacity: 0.8;
+        z-index: 1;
+        display: none;
+    }
+    .popupbox{
+        position: absolute;
+        z-index: 2;
+        background-color: white;
+        color: black;
+        width: 40%;
+        padding: 20px;
+        border-radius: 10px;
+        left: 30%;
+        display: none;
+    }
+</style>
+
+
+<button onclick="show()">Show Popup</button>
+<div class="overley"></div>
+<div class="popupbox">
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti commodi sequi illum veritatis voluptatibus reiciendis sapiente voluptas quos nostrum eos eaque iste provident ea at omnis blanditiis, rem earum tempora?</p>
+<button onclick="closepopup()">close</button>
+</div>
+<!-- <script>
+    var popupoverley = document.querySelector(".overley")
+    var popupbox = document.querySelector(".popupbox")
+    function show()
+    {
+        popupbox.style.display="block"
+        popupoverley.style.display="block"
+    }
+    function closepopup()
+    {
+        popupbox.style.display="none"
+        popupoverley.style.display="none"
+    }
+
+</script> -->
+
+
+<button id="btn">show</button>
+<script>
+
+    var button=document.getElementById("btn")
+
+    button.addEventListener("click",function(){
+        alert("Hello")
+    })
+
+    button.addEventListener("mouseover",function(){
+        alert("Mouse over")
+    })
+</script>
